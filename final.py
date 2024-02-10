@@ -137,7 +137,7 @@ def main():
                     if format["resolution"] == "audio only" and format["ext"] == "m4a":
                         url = format["url"]
                         break
-                aai.settings.api_key = 'ee1353a3aac74d90bacba963e1df0605'
+                aai.settings.api_key = 'Your API Key'
                 transcriber = aai.Transcriber()
                 transcript = transcriber.transcribe(url)
                 text_chunks = get_text_chunks(transcript.text)
